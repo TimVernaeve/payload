@@ -50,6 +50,9 @@ export default async function Page({ params: { slug = 'home' } }) {
 
   const { hero, layout } = page
 
+  // eslint-disable-next-line no-console
+  console.log(layout[1])
+
   return (
     <React.Fragment>
       <Hero {...hero} />

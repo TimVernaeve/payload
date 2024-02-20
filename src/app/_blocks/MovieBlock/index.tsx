@@ -18,7 +18,7 @@ export const MovieBlock: React.FC<Props> = props => {
   return (
     <div>
       {movies.map((movie: Movie) => (
-        <div className={classes.mediaBlock}>
+        <div className={classes.mediaBlock} key={movie.id}>
           <span>this is a mobieblock</span>
           <Gutter>
             <Media resource={movie.poster} src={staticImage} />

@@ -8,14 +8,14 @@ export const MovieBlock: Block = {
   fields: [
     invertBackground,
     {
-        name: 'movies',
-        type: 'relationship',
-        label: 'Movies',
-        relationTo: 'movies',
-        hasMany: true,
-        admin: {
-            allowCreate: true,
-        },
+      name: 'movies',
+      type: 'relationship',
+      label: 'Movies',
+      relationTo: 'movies',
+      hasMany: true,
+      admin: {
+        allowCreate: true,
+      },
     },
-],
+  ],
 }
